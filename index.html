@@ -42,7 +42,7 @@
       height: 200px;
       background: #2d8044;
       bottom: 0;
-      left: 50%;
+      left: 65%;
       transform: translateX(-50%);
     }
 
@@ -55,15 +55,15 @@
     }
 
     .leaf.left {
-      bottom: 80px;
-      left: 20px;
+      bottom: 60px;
+      left: 65px;
       transform: rotate(-30deg);
       transform-origin: top right;
     }
 
     .leaf.right {
-      bottom: 80px;
-      right: 20px;
+      bottom: 70px;
+      right: -20px;
       transform: rotate(30deg) scaleX(-1);
       transform-origin: top left;
     }
@@ -104,7 +104,7 @@
       z-index: 0;
       pointer-events: none;
       margin-top: -130px;
-      margin-left: 10px;
+      margin-left: 30px;
     }
 
     .container.open .message-box {
@@ -119,6 +119,7 @@
       font-size: 14px;
       line-height: 1.4;
       margin: 0;
+      font-style: italic;
     }
 
     .petal::before {
@@ -151,7 +152,8 @@
     }
 
     .button-container {
-      margin-top: 20px;
+      margin-top: -20px;
+      margin-left: 50px;
     }
 
     .button {
@@ -252,7 +254,7 @@
   </div>
 
   <div class="button-container">
-    <button class="button" onclick="showHearts(); document.querySelector('.container').classList.add('open')">Hazme Click</button>
+    <button class="button" onclick="showHearts(); document.querySelector('.container').classList.add('open')">Dale click si me quieres :(</button>
   </div>
 
   <script>
@@ -270,3 +272,4 @@
   </script>
 </body>
 </html>
+
